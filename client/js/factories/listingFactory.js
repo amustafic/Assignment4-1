@@ -1,7 +1,7 @@
 angular.module('listings', []).factory('Listings', function($http) {
   var methods = {
     getAll: function() {
-      return $http.get('https://bootcamp5-adnanmustafic.herokuapp.com');
+      return $http.get('https://bootcamp5-adnanmustafic.herokuapp.com/');
     },
 	
 	create: function(listing) {
