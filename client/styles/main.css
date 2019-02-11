@@ -1,0 +1,19 @@
+#searchBar {
+  margin: 15px 10px;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.glyphicon-remove{
+  position: relative;
+  right: 0;
+}
+.jumbotron{
+  margin-top: 30%;
+}
+.bodya {
+  background-color:antiquewhite;
+}
