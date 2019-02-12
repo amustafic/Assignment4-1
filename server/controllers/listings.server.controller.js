@@ -51,16 +51,6 @@ exports.update = function(req, res) {
       listing.address = req.body.address;
   }
     
-/* save the coordinates (located in req.results if there is an address property) */
-  if(req.results) {
-      if(req.body.address)
-      {
-            listing.coordinates = {
-                latitude: req.results.lat, 
-                longitude: req.results.lng
-            };
-      }
-  }
 
   /* Then save the listing */
   listing.save(function(err) {
