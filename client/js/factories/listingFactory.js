@@ -15,7 +15,7 @@ angular.module('listings', []).factory('Listings', function($http) {
         return result of HTTP delete method
        */
 
-      return $http.delete('https://bootcamp5-adnanmustafic.herokuapp.com/api/listings', listing);
+      return $http.delete('https://bootcamp5-adnanmustafic.herokuapp.com/api/listings', id);
 
 
     }
