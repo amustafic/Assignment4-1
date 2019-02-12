@@ -25,7 +25,7 @@
               <tr ng-repeat="listing in listings | filter: query" ng-click="showDetails($index)">
                 <td>{{listing.code}}</td>
                 <td>{{listing.name}}</td>
-                <td button ng-click="deleteListing(listing._id)"><span style="color: red;" class="glyphicon glyphicon-remove"></span></td>
+                <td> <button ng-click="deleteListing($index)">Delete</button><span style="color: red;"></span></td>
               </tr>
             </table>
           </div>
