@@ -20,8 +20,9 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       Listings.remove(index).then(function(response) {
       }, function(error) {
         console.log('Could not delete:', error);
-        return res.status(200).send(response); 
       });
+      return res.status(200).send(response); 
+
     };
 
     $scope.showDetails = function(index) {
